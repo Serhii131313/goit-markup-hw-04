@@ -7,6 +7,8 @@
   --head-buttun-fon-color: #e7e9fc;
   --bg-color-fon-team: #f4f4fd;
   --fotter-text: #e7e9fc;
+  --border-company-color: #8e8f99;
+  --footer-hover-icon-color: #31d0aa;
 }
 
 /* ***** */
@@ -168,6 +170,17 @@ address {
 .hero {
   background-color: var(--color-text);
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office1.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -213,20 +226,48 @@ address {
   width: calc((100% - 3 * 24px) / 4);
 }
 
+.privilage__item::before {
+  content: '';
+  display: block;
+  height: 112px;
+  order: 0;
+
+  background-color: var(--bg-color-fon-team);
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon1::before {
+  background-image: url(../images/svg/icon1.svg);
+}
+.icon2::before {
+  background-image: url(../images/svg/icon2.svg);
+}
+.icon3::before {
+  background-image: url(../images/svg/icon3.svg);
+}
+.icon4::before {
+  background-image: url(../images/svg/icon4.svg);
+}
+
 .privilage__title {
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-text);
-  margin-bottom: 8px;
 }
 
 .privilage__text {
+  text-align: left;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--seconari-text-color);
 }
+
 /*SECTION WHAT */
 
 .what {
@@ -251,12 +292,15 @@ address {
   display: block;
 }
 
-/* .section__what-photo {
-} */
+.section__what-photo {
+  display: block;
+}
 
 /* SECTION TEAM */
 .section__team {
   background-color: var(--bg-color-fon-team);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .section__team-title {
@@ -281,6 +325,27 @@ address {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
+.section__team-item-link {
+  display: flex;
+  gap: 24px;
+}
+
+.link_team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--logo-color-top);
+}
+.link_team:hover,
+.link_team:focus {
+  background-color: var(--bg-color);
+}
 
 .section__team-photo {
   display: block;
@@ -292,27 +357,115 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  color: #2e2f42;
+  color: var(--color-text);
 }
 .team__wrapper {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
+
+  background-color: var(--bg-color);
+}
+
+.team__list-link {
+  display: flex;
+  gap: 24px;
 }
 
 .section__team-text {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--seconari-text-color);
 }
 
-/* Portfolio page */
+/*------------------- SECTION CUSTOMERS ----------------------> */
+
+.Customers {
+  background-color: var(--bg-color);
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+.Customers__title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: 72px;
+}
+.Customers__list {
+  display: flex;
+}
+.Customers__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.Customers__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--border-company-color);
+
+  border: 1px solid var(--border-company-color);
+  border-radius: 4px;
+}
+
+.Customers__link:hover,
+.Customers__link:focus {
+  border: 1px solid var(--portfolio-button-bg-hover-color);
+  color: var(--portfolio-button-bg-hover-color);
+}
+
+.company1 {
+  fill: currentColor;
+  display: flex;
+  justify-content: center;
+}
+.company2 {
+  fill: currentColor;
+  display: flex;
+  justify-content: center;
+}
+.company3 {
+  fill: currentColor;
+  display: flex;
+  justify-content: center;
+}
+.company4 {
+  fill: currentColor;
+  display: flex;
+  justify-content: center;
+}
+.company5 {
+  fill: currentColor;
+  display: flex;
+  justify-content: center;
+}
+.company6 {
+  fill: currentColor;
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------------PORTFOLIO PAGE------------------ */
 .portfolio__section {
   padding-top: 96px;
 }
 /* .section-title {
 } */
 
+.menu {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .section__button-list {
   display: flex;
   gap: 24px;
@@ -385,14 +538,24 @@ address {
   letter-spacing: 0.02em;
   color: var(--seconari-text-color);
 }
-/* FOOTER SECTION */
+
+/* ---------------FOOTER SECTION-------------------- */
 
 .footer {
   background-color: var(--color-text);
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
+.footer-flex {
+  display: flex;
+}
+.footer-container {
+  background-color: var(--color-text);
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1158px;
+  margin: auto;
+}
 .lo__go-link {
   display: block;
   font-family: 'Raleway', sans-serif;
@@ -414,4 +577,42 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--fotter-text);
+}
+.footer-flex-block {
+  margin-left: 120px;
+}
+.social-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--bg-color);
+}
+.social-item:not(:last-child) {
+  margin-right: 16px;
+}
+.social-links {
+  margin-top: 16px;
+  display: flex;
+}
+.social-links .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--logo-footer-color);
+}
+/* .footer-links {
+        } */
+.links {
+  background-color: var(--seconari-text-color);
+}
+.links:hover,
+.links:focus {
+  background-color: var(--footer-hover-icon-color);
 }
