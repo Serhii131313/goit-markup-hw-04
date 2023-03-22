@@ -181,6 +181,7 @@ address {
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1440px;
 }
 
 .hero-title {
@@ -202,8 +203,7 @@ address {
   letter-spacing: 0.04em;
   color: var(--bg-color);
   background-color: var(--logo-color-top);
-  box-shadow: 0px 4px 4px rgb(0 0 0, 15);
-  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
   cursor: pointer;
@@ -344,7 +344,7 @@ address {
 }
 .link_team:hover,
 .link_team:focus {
-  background-color: var(--bg-color);
+  background-color: var(--portfolio-button-bg-hover-color);
 }
 
 .section__team-photo {
@@ -383,12 +383,12 @@ address {
 
 /*------------------- SECTION CUSTOMERS ----------------------> */
 
-.Customers {
+.customers {
   background-color: var(--bg-color);
   padding-top: 130px;
   padding-bottom: 120px;
 }
-.Customers__title {
+.customers__title {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -397,14 +397,14 @@ address {
   text-align: center;
   margin-bottom: 72px;
 }
-.Customers__list {
+.customers__list {
   display: flex;
 }
-.Customers__item:not(:last-child) {
+.customers__item:not(:last-child) {
   margin-right: 24px;
 }
 
-.Customers__link {
+.customers__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -418,41 +418,15 @@ address {
   border-radius: 4px;
 }
 
-.Customers__link:hover,
-.Customers__link:focus {
-  border: 1px solid var(--portfolio-button-bg-hover-color);
-  color: var(--portfolio-button-bg-hover-color);
-}
+/*.customers-icon {
+  display: flex;
+  justify-content: center;
+} */
 
-.company1 {
-  fill: currentColor;
-  display: flex;
-  justify-content: center;
-}
-.company2 {
-  fill: currentColor;
-  display: flex;
-  justify-content: center;
-}
-.company3 {
-  fill: currentColor;
-  display: flex;
-  justify-content: center;
-}
-.company4 {
-  fill: currentColor;
-  display: flex;
-  justify-content: center;
-}
-.company5 {
-  fill: currentColor;
-  display: flex;
-  justify-content: center;
-}
-.company6 {
-  fill: currentColor;
-  display: flex;
-  justify-content: center;
+.customers__link:hover,
+.customers__link:focus {
+  border-color: var(--portfolio-button-bg-hover-color);
+  color: var(--portfolio-button-bg-hover-color);
 }
 
 /* ---------------PORTFOLIO PAGE------------------ */
@@ -496,7 +470,7 @@ address {
 .section__button:focus {
   color: var(--bg-color);
   background-color: var(--portfolio-button-bg-hover-color);
-  border: transparent;
+  border-color: transparent;
 }
 .portfolio__section-list {
   list-style: none;
@@ -510,11 +484,19 @@ address {
   width: 360px;
 }
 
-/* .portfolio__section-link {
-} */
+.portfolio__section-link {
+  display: inline-block;
+}
+.portfolio__section-link:hover,
+.portfolio__section-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio__section-photo {
   display: block;
 }
+
 .portfolio__section-title {
   font-weight: 500;
   font-size: 20px;
