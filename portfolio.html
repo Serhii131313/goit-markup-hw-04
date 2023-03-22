@@ -10,196 +10,217 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
     <title>portfolio</title>
   </head>
   <body>
-       <header class="header">
+    <header class="header">
       <div class="header__container container">
+        <nav class="header__navigation">
+          <a class="header__logo link" href="./index.html"
+            >WEB<span class="header__span">Studio</span></a
+          >
+          <ul class="header__navigation-list list">
+            <li class="header__navigation-item">
+              <a class="header__navigation-link link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
-        <!------------------- SECTION NAVIGATION ---------------------->
-      <nav class="header__navigation">
-        <a class="header__logo link" href="./index.html"
-          >WEB<span class="header__span">Studio</span></a
-        >
-        <ul class="header__navigation-list list">
-          <li class="header__navigation-item">
-            <a class="header__navigation-link link" href="./index.html"
-              >Studio</a
-            >
-          </li>
-          <li class="header__navigation-item">
-            <a class="header__navigation-link link" href="./portfolio.html"
-              >Portfolio</a
-            >
-          </li>
-          <li class="header__navigation-item">
-            <a class="header__navigation-link link" href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <!------------------- SECTION ADDRESS ---------------------->
-      <address class="header__address">
-        <ul class="header__address-list list">
-          <li class="header__address-item">
-            <a class="header__adress-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="header__address-item">
-            <a class="header__adress-link link" href="tel:+11(000)111-11-11"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address></div>
+        <!------------------- SECTION ADDRESS ---------------------->
+        <address class="header__address">
+          <ul class="header__address-list list">
+            <li class="header__address-item">
+              <a
+                class="header__adress-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header__address-item">
+              <a class="header__adress-link link" href="tel:+11(000)111-11-11"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
-     <main>
 
     <!------------------- SECTION PORTFOLIO ---------------------->
-      
+    <main>
       <section class="menu portfolio__section">
-        <section class="container">
-        <h1 class="visually-hidden">portfolio</h1>
-        <ul class="section__button-list list">
-          <li class="section__button-item">
-            <button class="section__button" type="button">All</button>
-          </li>
-          <li class="section__button-item">
-            <button class="section__button" type="button">Web Site</button>
-          </li>
-          <li class="section__button-item">
-            <button class="section__button" type="button">App</button>
-          </li>
-          <li class="section__button-item">
-            <button class="section__button" type="button">Design</button>
-          </li>
-          <li class="section__button-item">
-            <button class="section__button" type="button">Marketing</button>
-          </li>
-        </ul>
+        <div class="container">
+          <h1 class="visually-hidden">portfolio</h1>
+          <ul class="section__button-list list">
+            <li class="section__button-item">
+              <button class="section__button" type="button">All</button>
+            </li>
+            <li class="section__button-item">
+              <button class="section__button" type="button">Web Site</button>
+            </li>
+            <li class="section__button-item">
+              <button class="section__button" type="button">App</button>
+            </li>
+            <li class="section__button-item">
+              <button class="section__button" type="button">Design</button>
+            </li>
+            <li class="section__button-item">
+              <button class="section__button" type="button">Marketing</button>
+            </li>
+          </ul>
 
-        <ul class="portfolio__section-list list">
-          <li class="portfolio__section-item">
-            <a class="portfolio__section-link link" href="">
-              <img
-                class="portfolio__section-photo"
-                src="./images/projects/img1.jpg"
-                alt="Banking App Interface Concept"
-                width="360"
-              />
-              <div class="border"><h2 class="portfolio__section-title">
-                Banking App Interface Concept
-              </h2>
-              <p class="portfolio__section-text">App</p></div>
-            </a>
-          </li>
-          <li class="portfolio__section-item">
-            <a class="portfolio__section-link link" href="">
-              <img
-                class="portfolio__section-photo"
-                src="./images/projects/img2.jpg"
-                alt="Cashless Payment"
-                width="360"
-              />
-              <div class="border"><h2 class="portfolio__section-title">Cashless Payment</h2>
-              <p class="portfolio__section-text">Marketing</p></div>
-            </a>
-          </li>
-          <li class="portfolio__section-item">
-            <a class="portfolio__section-link link" href="">
-              <img
-                class="portfolio__section-photo"
-                src="./images/projects/img3.jpg"
-                alt="Meditation App"
-                width="360"
-              />
-              <div class="border"><h2 class="portfolio__section-title">Meditation App</h2>
-              <p class="portfolio__section-text">App</p></div>
-            </a>
-          </li>
-          <li class="portfolio__section-item">
-            <a class="portfolio__section-link link" href="">
-              <img
-                class="portfolio__section-photo"
-                src="./images/projects/img4.jpg"
-                alt="Taxi Service"
-                width="360"
-              />
-              <div class="border"><h2 class="portfolio__section-title">Taxi Service</h2>
-              <p class="portfolio__section-text">Marketing</p></div>
-            </a>
-          </li>
-          <li class="portfolio__section-item">
-            <a class="portfolio__section-link link" href="">
-              <img
-                class="portfolio__section-photo"
-                src="./images/projects/img5.jpg"
-                alt="Seen Illustrationscr"
-                width="360"
-              />
-              <div class="border"><h2 class="portfolio__section-title">Screen Illustrations</h2>
-              <p class="portfolio__section-text">Design</p></div>
-            </a>
-          </li>
-          <li class="portfolio__section-item">
-            <a class="portfolio__section-link link" href="">
-              <img
-                class="portfolio__section-photo"
-                src="./images/projects/img6.jpg"
-                alt="Online Courses"
-                width="360"
-              />
-              <div class="border"><h2 class="portfolio__section-title">Online Courses</h2>
-              <p class="portfolio__section-text">Marketing</p></div></a
-            >
-          </li>
-          <li class="portfolio__section-item">
-            <a class="portfolio__section-link link" href=""
-              ><img
-                class="portfolio__section-photo"
-                src="./images/projects/img7.jpg"
-                alt="Instagram Stories Concept"
-                width="360"
-              />
-              <div class="border"><h2 class="portfolio__section-title">
-                Instagram Stories Concept
-              </h2>
-              <p class="portfolio__section-text">Design</p></div></a
-            >
-          </li>
-          <li class="portfolio__section-item">
-            <a class="portfolio__section-link link" href=""
-              ><img
-                class="portfolio__section-photo"
-                src="./images/projects/img8.jpg"
-                alt="Organic Food"
-                width="360"
-              />
-              <div class="border"><h2 class="portfolio__section-title">Organic Food</h2>
-              <p class="portfolio__section-text">Web Site</p></div></a
-            >
-          </li>
-          <li class="portfolio__section-item">
-            <a class="portfolio__section-link link" href=""
-              ><img
-                class="portfolio__section-photo"
-                src="./images/projects/img9.jpg"
-                alt="Fresh Coffee"
-                width="360"
-              />
-              <div class="border"><h2 class="portfolio__section-title">Fresh Coffee</h2>
-              <p class="portfolio__section-text">Web Site</p></div></a
-            >
-          </li>
-        </ul>
+          <ul class="portfolio__section-list list">
+            <li class="portfolio__section-item">
+              <a class="portfolio__section-link link" href="">
+                <img
+                  class="portfolio__section-photo"
+                  src="./images/projects/img1.jpg"
+                  alt="Banking App Interface Concept"
+                  width="360"
+                />
+                <div class="border">
+                  <h2 class="portfolio__section-title">
+                    Banking App Interface Concept
+                  </h2>
+                  <p class="portfolio__section-text">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__section-item">
+              <a class="portfolio__section-link link" href="">
+                <img
+                  class="portfolio__section-photo"
+                  src="./images/projects/img2.jpg"
+                  alt="Cashless Payment"
+                  width="360"
+                />
+                <div class="border">
+                  <h2 class="portfolio__section-title">Cashless Payment</h2>
+                  <p class="portfolio__section-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__section-item">
+              <a class="portfolio__section-link link" href="">
+                <img
+                  class="portfolio__section-photo"
+                  src="./images/projects/img3.jpg"
+                  alt="Meditation App"
+                  width="360"
+                />
+                <div class="border">
+                  <h2 class="portfolio__section-title">Meditation App</h2>
+                  <p class="portfolio__section-text">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__section-item">
+              <a class="portfolio__section-link link" href="">
+                <img
+                  class="portfolio__section-photo"
+                  src="./images/projects/img4.jpg"
+                  alt="Taxi Service"
+                  width="360"
+                />
+                <div class="border">
+                  <h2 class="portfolio__section-title">Taxi Service</h2>
+                  <p class="portfolio__section-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__section-item">
+              <a class="portfolio__section-link link" href="">
+                <img
+                  class="portfolio__section-photo"
+                  src="./images/projects/img5.jpg"
+                  alt="Seen Illustrationscr"
+                  width="360"
+                />
+                <div class="border">
+                  <h2 class="portfolio__section-title">Screen Illustrations</h2>
+                  <p class="portfolio__section-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__section-item">
+              <a class="portfolio__section-link link" href="">
+                <img
+                  class="portfolio__section-photo"
+                  src="./images/projects/img6.jpg"
+                  alt="Online Courses"
+                  width="360"
+                />
+                <div class="border">
+                  <h2 class="portfolio__section-title">Online Courses</h2>
+                  <p class="portfolio__section-text">Marketing</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio__section-item">
+              <a class="portfolio__section-link link" href=""
+                ><img
+                  class="portfolio__section-photo"
+                  src="./images/projects/img7.jpg"
+                  alt="Instagram Stories Concept"
+                  width="360"
+                />
+                <div class="border">
+                  <h2 class="portfolio__section-title">
+                    Instagram Stories Concept
+                  </h2>
+                  <p class="portfolio__section-text">Design</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio__section-item">
+              <a class="portfolio__section-link link" href=""
+                ><img
+                  class="portfolio__section-photo"
+                  src="./images/projects/img8.jpg"
+                  alt="Organic Food"
+                  width="360"
+                />
+                <div class="border">
+                  <h2 class="portfolio__section-title">Organic Food</h2>
+                  <p class="portfolio__section-text">Web Site</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio__section-item">
+              <a class="portfolio__section-link link" href=""
+                ><img
+                  class="portfolio__section-photo"
+                  src="./images/projects/img9.jpg"
+                  alt="Fresh Coffee"
+                  width="360"
+                />
+                <div class="border">
+                  <h2 class="portfolio__section-title">Fresh Coffee</h2>
+                  <p class="portfolio__section-text">Web Site</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
-    <!------------------- SECTION FOOTER ------------------->
-     </main>
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-flex">
