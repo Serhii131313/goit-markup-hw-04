@@ -418,10 +418,11 @@ address {
   border-radius: 4px;
 }
 
-/*.customers-icon {
+.customers-icon {
+  fill: currentColor;
   display: flex;
   justify-content: center;
-} */
+}
 
 .customers__link:hover,
 .customers__link:focus {
